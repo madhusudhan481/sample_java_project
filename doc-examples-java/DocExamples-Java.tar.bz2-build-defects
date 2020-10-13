@@ -1,0 +1,3 @@
+#!/bin/sh
+cd src1
+javac -g DocExamples.java -d ..
