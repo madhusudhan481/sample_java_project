@@ -106,6 +106,21 @@ RESOURCE_LEAK
 		// ignore exception
 	}
     }
+	
+	public void ResourceLeak3()
+    {
+	try
+	{
+		FileInputStream fis = new FileInputStream("bar1");  
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		
+		
+	}
+	catch(Exception e)
+	{
+		// ignore exception
+	}
+    }
 
 	
 /*===========================
