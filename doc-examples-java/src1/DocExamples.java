@@ -1,7 +1,7 @@
 import java.io.*;
 
 
-public class DocExamplesNew
+public class DocExamples
 {
 
 /*===========================
@@ -83,21 +83,6 @@ RESOURCE_LEAK
 	{
 		FileInputStream fis = new FileInputStream("foo");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
-	
-	public void ResourceLeak1()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("var");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
 		fis.close(); // does not close the BufferedInputStream
 	}
 	catch(Exception e)
@@ -105,8 +90,8 @@ RESOURCE_LEAK
 		// ignore exception
 	}
     }
-	
-			
+
+
 /*===========================
 REVERSE_INULL
 ===========================*/
