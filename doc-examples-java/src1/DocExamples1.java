@@ -1,7 +1,7 @@
 import java.io.*;
 
 
-public class DocExamples
+public class DocExamples1
 {
 
 /*===========================
