@@ -92,7 +92,19 @@ RESOURCE_LEAK
 	}
     }
 	
-	
+	public void ResourceLeak1()
+    {
+	try
+	{
+		FileInputStream fis = new FileInputStream("var");  
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		fis.close(); // does not close the BufferedInputStream
+	}
+	catch(Exception e)
+	{
+		// ignore exception
+	}
+    }
 	
 			
 /*===========================
