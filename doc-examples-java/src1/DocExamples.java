@@ -90,6 +90,20 @@ RESOURCE_LEAK
 		// ignore exception
 	}
     }
+	
+	public void ResourceLeak()
+    {
+	try
+	{
+		FileInputStream fis = new FileInputStream("bar");  
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		//fis.close(); // does not close the BufferedInputStream
+	}
+	catch(Exception e)
+	{
+		// ignore exception
+	}
+    }
 
 /*===========================
 REVERSE_INULL
