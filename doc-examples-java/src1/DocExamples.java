@@ -111,7 +111,7 @@ RESOURCE_LEAK
 	{
 		FileInputStream fis = new FileInputStream("foobar");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
-		
+		fis.close(); // does not close the BufferedInputStream
 	}
 	catch(Exception e)
 	{
@@ -119,19 +119,7 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak3()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("foobar");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
+	
 
 /*===========================
 REVERSE_INULL
@@ -163,7 +151,7 @@ USE_AFTER_FREE
 		String line1 = br.readLine();
 		br.close();
 		System.out.println(br.readLine()); // defect
-		
+		System.out.println(br.readLine()); // defect
 	}
 	catch(Exception e)
 	{
