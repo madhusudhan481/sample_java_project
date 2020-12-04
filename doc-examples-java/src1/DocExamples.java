@@ -91,11 +91,11 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak1()
+	public void ResourceLeak2()
     {
 	try
 	{
-		FileInputStream fis = new FileInputStream("bar");  
+		FileInputStream fis = new FileInputStream("foobar");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
 		
 	}
@@ -105,20 +105,19 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak2()
+	public void ResourceLeak4()
     {
 	try
 	{
-		FileInputStream fis = new FileInputStream("foobar");  
+		FileInputStream fis = new FileInputStream("foobar2");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
-		fis.close(); // does not close the BufferedInputStream
+		
 	}
 	catch(Exception e)
 	{
 		// ignore exception
 	}
     }
-	
 	
 
 /*===========================
