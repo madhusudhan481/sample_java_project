@@ -91,7 +91,7 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak()
+	public void ResourceLeak1()
     {
 	try
 	{
