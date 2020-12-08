@@ -138,6 +138,21 @@ RESOURCE_LEAK
 	}
     }
 	
+	public void ResourceLeak4()
+    {
+	try
+	{
+		FileInputStream fis = new FileInputStream("foobar4");  
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		
+		
+	}
+	catch(Exception e)
+	{
+		// ignore exception
+	}
+    }
+	
 /*===========================
 REVERSE_INULL
 ===========================*/
