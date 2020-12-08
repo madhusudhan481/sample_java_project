@@ -102,6 +102,7 @@ RESOURCE_LEAK
 	{
 		FileInputStream fis = new FileInputStream("bar");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
+		fis.close(); // does not close the BufferedInputStream
 		
 	}
 	catch(Exception e)
