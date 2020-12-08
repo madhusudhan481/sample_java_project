@@ -73,10 +73,7 @@ NULL_RETURN
         returnD().toString();
     }
 
-	public static void testE() {
-        // This demonstrates a very straightforward null-return bug
-        returnC().toString();
-    }
+	
 
 /*===========================
 RESOURCE_LEAK
