@@ -107,33 +107,7 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak2()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("foobar");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
 	
-	public void ResourceLeak3()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("foooooooobar1");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
 	
 /*===========================
 REVERSE_INULL
