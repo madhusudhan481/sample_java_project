@@ -1,7 +1,7 @@
 import java.io.*;
 
 
-public class DocExamplesTwo
+public class DocExamples
 {
 
 /*===========================
@@ -75,6 +75,11 @@ NULL_RETURN
 
 	public static void testE() {
         returnD().toString();
+    }
+
+	public static void testF() {
+        // This demonstrates a very straightforward null-return bug
+        returnC().toString();
     }
 
 /*===========================
