@@ -85,20 +85,6 @@ RESOURCE_LEAK
 	{
 		FileInputStream fis = new FileInputStream("foo");  
 		BufferedInputStream bis = new BufferedInputStream(fis);
-		fis.close(); // does not close the BufferedInputStream
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
-	
-	public void ResourceLeak1()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("bar");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
 		
 	}
 	catch(Exception e)
@@ -107,33 +93,7 @@ RESOURCE_LEAK
 	}
     }
 	
-	public void ResourceLeak2()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("foobar");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
 	
-	public void ResourceLeak3()
-    {
-	try
-	{
-		FileInputStream fis = new FileInputStream("foobar1");  
-		BufferedInputStream bis = new BufferedInputStream(fis);
-		
-	}
-	catch(Exception e)
-	{
-		// ignore exception
-	}
-    }
 	
 /*===========================
 REVERSE_INULL
