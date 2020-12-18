@@ -73,7 +73,9 @@ NULL_RETURN
         returnD().toString();
     }
 
-	
+	public static void testE() {
+        returnD().toString();
+    }
 
 /*===========================
 RESOURCE_LEAK
