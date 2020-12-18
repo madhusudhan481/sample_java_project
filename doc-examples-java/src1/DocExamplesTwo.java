@@ -83,7 +83,7 @@ NULL_RETURN
     }
 	
 	public static void testG() {
-        // This demonstrates a very straightforward null-return bug
+        
         returnC().toString();
     }
 
