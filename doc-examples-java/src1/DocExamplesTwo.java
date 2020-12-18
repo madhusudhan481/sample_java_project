@@ -81,6 +81,11 @@ NULL_RETURN
         // This demonstrates a very straightforward null-return bug
         returnC().toString();
     }
+	
+	public static void testG() {
+        // This demonstrates a very straightforward null-return bug
+        returnC().toString();
+    }
 
 /*===========================
 RESOURCE_LEAK
